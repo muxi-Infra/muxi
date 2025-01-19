@@ -33,6 +33,13 @@ var initCmd = &cobra.Command{
 			return
 		}
 
+		// 删除 .git 文件夹
+		gitDir := fmt.Sprintf("%s/.git", projectName)
+		if err := os.RemoveAll(gitDir); err != nil {
+			fmt.Printf("Error removing .git directory: %v\n", err)
+			return
+		}
+
 		// 输出成功信息
 		fmt.Printf("Project initialized from template in %s\n", projectName)
 	},
