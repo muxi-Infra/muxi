@@ -1,8 +1,10 @@
 # Muxi-Micro-CLI
 木犀微服务框架CLI工具
 
-## 命令结构
+## Notice
+如果遇到 `🚫 Failed to remove .git directory ❗️ Please remove .git directory manually` 的报错提示请手动删除 `.git` 文件夹
 
+## 命令结构
 ```shell
 muxi
 ├── init        # 初始化项目
@@ -24,8 +26,7 @@ muxi init [project-name]
     ```shell
     muxi update
     ```
-2. 再次执行安装命令(建议先清除缓存)
-    ```shell 
-    go clean -modcache // 清除缓存
+2. 再次执行安装命令(如果无效先清除缓存)
+    ```shell
     go install github.com/muxi-Infra/muxi@latest
     ```
