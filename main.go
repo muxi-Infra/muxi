@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github/muxi-Infra/muxi/cmd"
+	"github.com/muxi-Infra/muxi/cmd"
 )
 
 // 编译指令 go build -o muxi
