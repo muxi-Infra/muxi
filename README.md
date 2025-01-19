@@ -18,3 +18,14 @@ go install github.com/muxi-Infra/muxi@latest
 ```shell
 muxi init [project-name]
 ```
+
+## 更新方法
+1. 通过muxi命令更新(暂不支持，之后实现)
+    ```shell
+    muxi update
+    ```
+2. 再次执行安装命令(建议先清除缓存)
+    ```shell 
+    go clean -modcache // 清除缓存
+    go install github.com/muxi-Infra/muxi@latest
+    ```

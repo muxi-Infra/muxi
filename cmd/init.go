@@ -35,8 +35,9 @@ var initCmd = &cobra.Command{
 
 		// 删除 .git 文件夹
 		gitDir := fmt.Sprintf("%s/.git", projectName)
-		if err := os.RemoveAll(gitDir); err != nil {
-			fmt.Printf("Error removing .git directory: %v\n", err)
+		cmdRemoveGit := exec.Command("rm", "-rf", gitDir)
+		if err := cmdRemoveGit.Run(); err != nil {
+			fmt.Printf("Error removing .git directory using rm: %v\n", err)
 			return
 		}
 
