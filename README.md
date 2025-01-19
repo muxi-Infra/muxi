@@ -11,7 +11,7 @@ muxi
 
 ## 安装方法
 ```shell
-go install github.com/muxi-Infa/muxi@latest
+go install github.com/muxi-Infra/muxi@latest
 ```
 
 ## 使用方法
