@@ -6,27 +6,27 @@
 
 ## 命令结构
 ```shell
-muxi
+muximicro
 ├── init        # 初始化项目
 └── help        # 查看帮助
 ```
 
 ## 安装方法
 ```shell
-go install github.com/muxi-Infra/muxi@latest
+go install github.com/muxi-Infra/muximicro@latest
 ```
 
 ## 使用方法
 ```shell
-muxi init [project-name]
+muximicro init [project-name]
 ```
 
 ## 更新方法
 1. 通过muxi命令更新(暂不支持，之后实现)
     ```shell
-    muxi update
+    muximicro update
     ```
 2. 再次执行安装命令(如果无效先清除缓存)
     ```shell
-    go install github.com/muxi-Infra/muxi@latest
+    go install github.com/muxi-Infra/muximicro@latest
     ```
