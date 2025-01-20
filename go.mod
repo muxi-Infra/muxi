@@ -1,4 +1,4 @@
-module github.com/muxi-Infra/muxi
+module github.com/muxi-Infra/muximicro
 
 go 1.23
 
